@@ -1,0 +1,851 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140790721-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140790721-1');
+</script>
+
+    <meta charset="utf-8">
+    <link rel="icon" href="https://i.pinimg.com/564x/8e/d0/f7/8ed0f7b6a3747d66a26755321f603cc2.jpg" type="image/png" sizes="64x64">
+    <meta property="og:url" content="http://celestialme.pythonanywhere.com/tests" >
+    <title>Tests</title>
+  </head>
+  <body>
+    <style media="screen">
+    body{
+      margin: 0 ;
+      background-color: #666666;
+      overflow: hidden;
+    }
+      .terms{
+        background-color: orange;
+          display: inline-block;
+          width: 49.5%;
+          margin-bottom: 1%;
+          margin-left: -0.2%;
+          text-align: center;
+          padding: 2% 0;
+          transition: background-color 500ms;
+      }
+      .terms:hover{
+        background-color: #800020;
+      }
+      .courses{
+        position: relative;
+        transition-duration: 500ms;
+        transition-property: transform;
+        right: 101%;
+        cursor: pointer;
+      }
+      .course1{
+        transition-delay: 500ms;
+      }
+      .course2{
+        transition-delay: 300ms;
+      }
+      .course3{
+        transition-delay: 100ms;
+      }
+
+      .terms-wrap{
+        position: fixed;
+        bottom: 0;
+        width: 99%;
+        right: -100%;
+
+      }
+    .left{
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+
+    }
+    .right{
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+
+    }
+
+    .subjects{
+        position: absolute;
+        display: inline-block;
+        margin: auto;
+        float: left;
+        right: 140%;
+        transition-duration: 700ms;
+
+
+    }
+    .sagnebi-name {
+    	background: rgba(0,0,0,0.9);
+    	color: #a01414;
+    	width: 100%;
+    	font-size: 20px;
+    	text-align: center;
+    	margin-top: 35px;
+    	font-weight: bold;
+    	padding-top: 5px;
+    	padding-bottom: 3px;
+    	-webkit-transition: 700ms ease;
+        -moz-transition: 700ms ease;
+        -ms-transition: 700ms ease;
+        -o-transition: 700ms ease;
+        transition: 2000ms ease;
+    	font-family: nino;
+    }
+    .subjects:hover .sagnebi-name{
+    	background: rgba(255,255,255,0.8);
+    	color: #000;
+    	font-size: 25px;
+    	font-weight:700;
+    	margin-top: 0px;
+    	font-family:"Times New Roman", Times, serif;
+    	text-align: center;
+    	padding-top: 35px;
+    	padding-bottom: 36px;
+    	padding-left: 0px;
+    	padding-right: 0px;
+    	webkit-transition: 700ms ease;
+        -moz-transition: 700ms ease;
+        -ms-transition: 700ms ease;
+        -o-transition: 700ms ease;
+        transition: 700ms ease;
+    	font-family: nino;
+      transform:rotate(360deg);
+    }
+.arrow{
+  display: none;
+  position: absolute;
+top: 66%;
+left: 4%;
+border: solid;
+color: orange;
+width: 100px;
+height: 100px;
+border-width: 30px 0 0px 30px;
+transform: rotate(-45deg);
+}
+#custom:hover:before {
+    content: 'ტესტის ფორმატია: \A //// შეკითხვა \A /// არასწორი პასუხი \A // სწორი პასუხი';
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 300px;
+    display: inline;
+    white-space: pre-wrap;
+    border-radius: 12px;
+    left: 100%;
+    top: 0;
+}
+#custom{
+    position:relative;
+}
+    @media  all  and (max-width: 1043px) {
+
+      .terms{
+        background-color: orange;
+          display: inline-block;
+          width: 49.5%;
+          margin-bottom: 1%;
+          margin-left: -0.2%;
+          text-align: center;
+          padding: 3% 0;
+      }
+
+    }
+    .bg-neurology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -10px -10px;
+}
+
+
+.bg-pathanatomy {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -230px -10px;
+}
+
+
+.bg-pathphysiology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -450px -10px;
+}
+
+
+.bg-pediatry {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -670px -10px;
+}
+
+
+.bg-pharmacology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -890px -10px;
+}
+
+
+.bg-surgery {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -1110px -10px;
+}
+
+
+.bg-therapy {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -1330px -10px;
+}
+
+
+.bg-top {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -1550px -10px;
+}
+
+
+.bg-urology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -1770px -10px;
+}
+
+
+.bg-anatomia {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -1990px -10px;
+}
+
+
+.bg-bioqimia {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -2210px -10px;
+}
+
+
+.bg-chemistry {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -2430px -10px;
+}
+
+
+.bg-fiziologia {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -2650px -10px;
+}
+
+
+.bg-forensic {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -2870px -10px;
+}
+
+
+.bg-genetics {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -3090px -10px;
+}
+
+
+.bg-gynaecology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -3310px -10px;
+}
+
+
+.bg-higiene {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -3530px -10px;
+}
+
+
+.bg-histologia {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -3750px -10px;
+}
+
+
+.bg-immunology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -3970px -10px;
+}
+
+
+.bg-infective {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -4190px -10px;
+}
+
+
+.bg-jandacva {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -4410px -10px;
+}
+
+
+.bg-microbiology , .bg-childinfective {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -4630px -10px;
+}
+
+.bg-dermatology {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -4850px -10px;
+}
+
+.bg-residency {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -5070px -10px;
+}
+.bg-kurortologia {
+    width: 200px; height: 212px;
+    background: url('static/css_sprites.png') -5291px -10px;
+}
+    </style>
+
+
+<div class="terms-wrap">
+    <div class="course1 courses">
+        <div class="term1 terms left">
+          სემესტრი 1
+        </div>
+        <div class="term2 terms right">
+      სემესტრი 2
+        </div>
+    </div>
+
+  <div class="course2  courses">
+      <div class="term3 terms left">
+    სემესტრი 3
+      </div>
+      <div class="term4 terms right">
+    სემესტრი 4
+      </div>
+  </div>
+  <div class="course3 courses">
+      <div class="term5 terms left">
+    სემესტრი 5
+      </div>
+      <div class="term6 terms right">
+    სემესტრი 6
+      </div>
+  </div>
+  <div class="course4 courses">
+      <div class="term7-8 terms" style='border-radius: 12px; width: 99%;'>
+    კურსი 4
+      </div>
+  </div>
+  <div class="course5 courses">
+      <div class="term9-10 terms" style='border-radius: 12px; width: 99%;'>
+    კურსი 5
+      </div>
+  </div>
+  <div class="course6 courses">
+    <div class="term11-12 terms" style='border-radius: 12px; width: 99%;'>
+  კურსი 6
+    </div>
+</div>
+ <div class="course4 courses" style='text-align:center;cursor:default;'>
+      <div  class="termPOST terms" style='border-radius: 12px; width: 20%;margin-right:1% ;cursor:pointer;'>
+    პოსტ დიპლომური
+  </div>
+
+   <div id='custom' onclick="custom()" class="terms" style='border-radius: 12px; width: 20%;cursor:pointer;'>
+    ჩემი ტესტი
+  </div>
+  </div>
+
+
+</div>
+
+<div onclick="arrow()" class="arrow">
+
+</div>
+
+<div class="subjects subjinterm3  bg-fiziologia">
+<a href="/?subject=fiziologia"></a>
+<a href="/?subject=fiziologia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფიზიოლოგია</div></a>
+</div>
+<div class="subjects subjinterm3   bg-bioqimia">
+<a href="/?subject=bioqimia"></a>
+<a href="/?subject=bioqimia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ბიოქიმია</div></a>
+</div>
+
+<!--<div class="subjects subjinterm4">-->
+<!--<a href="/?subject=nestanisbioqimia"> bg-bioqimia</a>-->
+<!--<a href="/?subject=nestanisbioqimia"> <div class="sagnebi-name" style="position:absolute;top:30%;">ბიოქიმია-ნესტანის ამოკრეფილები</div></a>-->
+<!--</div>-->
+<div class="subjects subjinterm4   bg-bioqimia">
+<a href="/?subject=nestanismocemulibioqimia"></a>
+<a href="/?subject=nestanismocemulibioqimia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ბიოქიმია-ნესტანის მოცემული </div></a>
+</div>
+
+<div class="subjects subjinterm2   bg-histologia">
+<a href="/?subject=histologia"></a>
+<a href="/?subject=histologia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ჰისტოლოგია</div></a>
+</div>
+
+<div class="subjects subjinterm3   bg-anatomia">
+<a href="/?subject=anatomia"></a>
+<a href="/?subject=anatomia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ანატომია</div></a>
+</div>
+
+<div class="subjects subjinterm4   bg-top">
+<a href="/?subject=topanatomia"></a>
+<a href="/?subject=topanatomia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ტოპანატომია</div></a>
+</div>
+<div class="subjects subjinterm4   bg-fiziologia">
+<a href="/?subject=fiziologia2"></a>
+<a href="/?subject=fiziologia2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფიზიოლოგია II</div></a>
+</div>
+
+<!--<div class="subjects subjinterm4">-->
+<!--<a href="/?subject=bioqimia2"> bg-bioqimia</a>-->
+<!--<a href="/?subject=bioqimia2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ბიოქიმია II</div></a>-->
+
+<!--</div>-->
+<!--<div class="subjects subjinterm4">-->
+<!--<a href="/?subject=bioqimia2yellow"> bg-bioqimia</a>-->
+<!--<a href="/?subject=bioqimia2yellow"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ბიოქიმია-ყვითელი II</div></a>-->
+
+<!--</div>-->
+
+<div class="subjects subjinterm4   bg-genetics">
+<a href="/?subject=genetika2"></a>
+<a href="/?subject=genetika2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">გენეტიკა II</div></a>
+</div>
+
+<div class="subjects subjinterm4   bg-microbiology">
+<a href="/?subject=microbiology"></a>
+<a href="/?subject=microbiology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">მიკრობიოლოგია</div></a>
+</div>
+<div class="subjects subjinterm5   bg-pharmacology">
+<a href="/?subject=pharmacology"></a>
+<a href="/?subject=pharmacology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფარმაკოლოგია</div></a>
+</div>
+<div class="subjects subjinterm5   bg-microbiology">
+<a href="/?subject=microbiologymid"></a>
+<a href="/?subject=microbiologymid"> <div class="sagnebi-name"  style="position:absolute;top:30%;">მიკრობიოლოგია II მთლიანი</div></a>
+</div>
+<div class="subjects subjinterm5   bg-top">
+<a href="/?subject=topanatomia2"></a>
+<a href="/?subject=topanatomia2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ტოპანატომია II</div></a>
+</div>
+
+<div class="subjects subjinterm5   bg-pathanatomy">
+<a href="/?subject=pathanatomy"></a>
+<a href="/?subject=pathanatomy"> <div class="sagnebi-name"  style="position:absolute;top:30%;">პათანატომია</div></a>
+</div>
+<div class="subjects subjinterm5   bg-immunology">
+<a href="/?subject=immunology"></a>
+<a href="/?subject=immunology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">იმუნოლოგია</div></a>
+</div>
+<div class="subjects subjinterm3   bg-histologia">
+<a href="/?subject=histologia2"></a>
+<a href="/?subject=histologia2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ჰისტოლოგია II</div></a>
+</div>
+
+<div class="subjects subjinterm5   bg-pharmacology">
+<a href="/?subject=pharmacology800"></a>
+<a href="/?subject=pharmacology800"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფარმაკოლოგია 800 </div></a>
+</div>
+<div class="subjects subjinterm5   bg-pharmacology">
+<a href="/?subject=pharmacologyStom"></a>
+<a href="/?subject=pharmacologyStom"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფარმაკოლოგია სტომატოლოგებისთვის</div></a>
+</div>
+<div class="subjects subjinterm5   bg-microbiology">
+<a href="/?subject=virusologia"></a>
+<a href="/?subject=virusologia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">მიკრობიოლოგია II ვირუსოლოგია</div></a>
+</div>
+<div class="subjects subjinterm5   bg-pathphysiology">
+<a href="/?subject=pathphysiology"></a>
+<a href="/?subject=pathphysiology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">პათ.ფიზიოლოგია</div></a>
+</div>
+<div class="subjects subjinterm2   bg-chemistry">
+<a href="/?subject=chemistry"></a>
+<a href="/?subject=chemistry"> <div class="sagnebi-name"  style="position:absolute;top:30%;">სამედიცინო ქიმია II</div></a>
+</div>
+<div class="subjects subjinterm6   bg-pharmacology">
+<a href="/?subject=pharmacology2"></a>
+<a href="/?subject=pharmacology2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფარმაკოლოგია II</div></a>
+</div>
+<div class="subjects subjinterm6   bg-pharmacology">
+<a href="/?subject=pharmacologycns"></a>
+<a href="/?subject=pharmacologycns"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ფარმაკოლოგია ცნს-დან</div></a>
+</div>
+
+<div class="subjects subjinterm6   bg-pathphysiology">
+<a href="/?subject=pathphysiology2"></a>
+<a href="/?subject=pathphysiology2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">პათ.ფიზიოლოგია II</div></a>
+</div>
+<div class="subjects subjinterm6   bg-pathanatomy">
+<a href="/?subject=pathanatomy2"></a>
+<a href="/?subject=pathanatomy2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">პათ.ანატომია II</div></a>
+</div>
+
+<div class="subjects subjinterm6   bg-pathanatomy">
+<a href="/?subject=pathanatomy22"></a>
+<a href="/?subject=pathanatomy22"> <div class="sagnebi-name"  style="position:absolute;top:30%;">პათ.ანატომია II (მეორე ტესტი)</div></a>
+</div>
+
+<div class="subjects subjinterm6   bg-higiene">
+<a href="/?subject=higiene"></a>
+<a href="/?subject=higiene"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ჰიგიენა</div></a>
+</div>
+<div class="subjects subjinterm7-8   bg-pediatry">
+<a href="/?subject=pediatry"></a>
+<a href="/?subject=pediatry"> <div class="sagnebi-name"  style="position:absolute;top:30%;">პედიატრია</div></a>
+</div>
+
+<div class="subjects subjinterm7-8   bg-neurology">
+<a href="/?subject=neurology"></a>
+<a href="/?subject=neurology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">კერძო ნევროლოგია</div></a>
+</div>
+
+
+<div class="subjects subjinterm7-8   bg-neurology">
+<a href="/?subject=genneurology"></a>
+<a href="/?subject=genneurology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ნევროლოგია ორივე</div></a>
+</div>
+
+<div class="subjects subjinterm7-8   bg-urology">
+<a href="/?subject=urology"></a>
+<a href="/?subject=urology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">უროლოგია</div></a>
+</div>
+<div class="subjects subjinterm7-8   bg-surgery">
+<a href="/?subject=surgery"></a>
+<a href="/?subject=surgery"> <div class="sagnebi-name"  style="position:absolute;top:30%;">კერძო ქირურგია</div></a>
+</div>
+<div class="subjects subjinterm7-8   bg-therapy">
+<a href="/?subject=therapy"></a>
+<a href="/?subject=therapy"> <div class="sagnebi-name"  style="position:absolute;top:30%;">თერაპია</div></a>
+</div>
+<div class="subjects subjinterm7-8   bg-gynaecology">
+<a href="/?subject=gynaecology"></a>
+<a href="/?subject=gynaecology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">გინეკოლოგია</div></a>
+</div>
+
+<div class="subjects subjinterm7-8   bg-gynaecology">
+<a href="/?subject=gynaecologyaxali"></a>
+<a href="/?subject=gynaecologyaxali"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ახალი გინეკოლოგია</div></a>
+</div>
+<div class="subjects subjinterm7-8   bg-dermatology">
+  <a href="/dermatology"></a>
+  <a href="/dermatology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">დერმატოლოგია</div></a>
+  </div>
+
+<div class="subjects subjinterm9-10   bg-jandacva">
+<a href="/?subject=jandacva"></a>
+<a href="/?subject=jandacva"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ჯანდაცვა</div></a>
+</div>
+
+<div class="subjects subjinterm9-10   bg-surgery">
+<a href="/?subject=qirurgia3"></a>
+<a href="/?subject=qirurgia3"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ქირურგია III</div></a>
+</div>
+<div class="subjects subjinterm9-10   bg-therapy">
+<a href="/?subject=therapy2"></a>
+<a href="/?subject=therapy2"> <div class="sagnebi-name"  style="position:absolute;top:30%;">თერაპია 2</div></a>
+</div>
+
+<div class="subjects subjinterm9-10   bg-forensic">
+<a href="/?subject=forensic"></a>
+<a href="/?subject=forensic"> <div class="sagnebi-name"  style="position:absolute;top:30%;">სასამართლო მედიცინა</div></a>
+</div>
+<div class="subjects subjinterm9-10   bg-forensic">
+<a href="/?subject=forensic-mtliani"></a>
+<a href="/?subject=forensic-mtliani"> <div class="sagnebi-name"  style="position:absolute;top:30%;">სასამართლო მედიცინა მთლიანი</div></a>
+</div>
+<div class="subjects subjinterm9-10   bg-infective">
+<a href="/?subject=infective"></a>
+<a href="/?subject=infective"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ინფექციური</div></a>
+</div>
+
+
+<div class="subjects subjinterm11-12   bg-gynaecology">
+<a href="/?subject=gynaecologyVI"></a>
+<a href="/?subject=gynaecologyVI"> <div class="sagnebi-name"  style="position:absolute;top:30%;">გინეკოლოგია</div></a>
+</div>
+
+<div class="subjects subjinterm11-12   bg-therapy">
+<a href="/?subject=therapyVI"></a>
+<a href="/?subject=therapyVI"> <div class="sagnebi-name"  style="position:absolute;top:30%;">თერაპია (ჩანართებით)</div></a>
+</div>
+<div class="subjects subjinterm11-12   bg-therapy">
+<a href="/?subject=therapyVIo"></a>
+<a href="/?subject=therapyVIo"> <div class="sagnebi-name"  style="position:absolute;top:30%;">თერაპია ორიგინალი</div></a>
+</div>
+<div class="subjects subjinterm11-12   bg-surgery">
+<a href="/?subject=surgeryVI"></a>
+<a href="/?subject=surgeryVI"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ქირურგია</div></a>
+</div>
+<div class="subjects subjinterm11-12   bg-pediatry">
+<a href="/?subject=child-adultVI"></a>
+<a href="/?subject=child-adultVI"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ბავშვთა და მოზრდილთა</div></a>
+</div>
+
+
+<div class="subjects subjinterm11-12   bg-kurortologia">
+<a href="/?subject=kurortologia"></a>
+<a href="/?subject=kurortologia"> <div class="sagnebi-name"  style="position:absolute;top:30%;">კურორტოლოგია</div></a>
+</div>
+<div class="subjects subjinterm11-12   bg-childinfective">
+<a href="/?subject=child-infective"></a>
+<a href="/?subject=child-infective"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ბავშვთა ინფექციური</div></a>
+</div>
+
+
+
+
+  <div class="subjects subjintermPOST   bg-therapy">
+<a href="/?subject=cardioLicense"></a>
+<a href="/?subject=cardioLicense"> <div class="sagnebi-name"  style="position:absolute;top:30%;">სალიცენზიო კარდიოლოგია</div></a>
+</div>
+<div class="subjects subjintermPOST   bg-gynaecology">
+<a href="/?subject=gynaecologyLicense"></a>
+<a href="/?subject=gynaecologyLicense"> <div class="sagnebi-name"  style="position:absolute;top:30%;">გინეკოლოგია სალიცენზიო</div></a>
+</div>
+
+<div class="subjects subjintermPOST   bg-fiziologia">
+<a href="/?subject=anesthesia-reanimatology"></a>
+<a href="/?subject=anesthesia-reanimatology"> <div class="sagnebi-name"  style="position:absolute;top:30%;">ანესთეზიოლოგია რეანიმატოლოგია</div></a>
+</div>
+
+<div class="subjects subjintermPOST   bg-residency">
+  <a href="/?subject=rezidentura"></a>
+  <a href="/?subject=rezidentura"> <div class="sagnebi-name"  style="position:absolute;top:30%;">რეზიდენტურა</div></a>
+  </div>
+
+
+<script type="text/javascript">
+for (var i = 0; i < document.getElementsByClassName("courses").length; i++) {
+  document.getElementsByClassName("courses")[i].addEventListener("click",function(e){
+
+Move(e.target.classList[0]);
+termback=e.target.classList[0]
+console.log(e.target.classList[0])
+  } );
+}
+
+
+
+function Move(term){
+
+  if(term.includes('term')==false){
+    return
+  }
+    document.getElementsByClassName('arrow')[0].style.display = 'block'
+  Array.prototype.forEach.call(document.getElementsByClassName("courses"), function(el){
+    el.style.transform = 'translateX(101%)'
+
+
+  })
+var index=0
+var indexrow = 0
+var element = document.getElementsByClassName("subjin"+term)
+  for (var i = element.length-1; i >=0 ; i--) {
+    index++
+
+    element[i].style.transitionDelay = 100*(index)+'ms'
+if (window.innerWidth -200 > (index-1)*200) {
+  element[i].style.transform =  'translateX('+(window.innerWidth*1.4-(index-1)*200)+'px)  translateY('+indexrow*212+'px)'
+}else{
+  index = 1
+  indexrow++
+   element[i].style.transform =  'translateX('+(window.innerWidth*1.4-(index-1)*200)+'px) translateY('+indexrow*212+'px)'
+
+}
+  }
+}
+function arrow() {
+  document.getElementsByClassName('arrow')[0].style.display = 'none'
+  Array.prototype.forEach.call(document.getElementsByClassName("courses"), function(el){
+    el.style.transform = 'translateX(0)'
+
+  })
+  var element = document.getElementsByClassName("subjin"+termback)
+  for (var i = element.length-1; i >=0 ; i--) {
+
+
+  element[i].style.transform = 'translateX(0px)  translateY(0px)'
+  }
+}
+
+
+
+
+
+
+// ===============================================custom test===========================================
+function custom() {
+  inputfile = document.createElement('input')
+  inputfile.type = 'file'
+  inputfile.setAttribute("accept",".txt")
+  inputfile.click();
+  inputfile.onchange = function(e){
+  var  file = inputfile.files[0]
+
+
+      var reader = new FileReader();
+      reader.onload = function(){
+        var cachedid = [];
+        var hasToDownload = false;
+        test = reader.result
+        test = test.replace(/°/gm,'')
+        test = test.replace(/\\{4}/gm,'¢')
+        test = test.replace(/\\{3}/gm,'µ')
+        test = test.replace(/\\{2}/gm,'°')
+
+        test = test.replace(/\/{4}/gm,'¢')
+        test = test.replace(/\/{3}/gm,'µ')
+        test = test.replace(/\/{2}/gm,'°')
+
+        test = test.replace(/(\r\n|\n|\r)/gm,' ')
+        test = test.replace(/¢/gm,"\n ¢")
+        test = test.replace(/µ/gm,"\n µ")
+        test = test.replace(/°/gm,"\n °")
+        test = test.split('\n')
+
+        if(test.length < 2){
+        test = reader.result
+        test = test.replace(/^\d+\./gm,'¢')
+        test = test.replace(/^[ა-ზ]\s?\)/gm,'µ')
+        test = test.replace(/^\*[ა-ზ]\s?\)/gm,'°')
+        test = test.replace(/(\r\n|\n|\r)/gm,' ')
+        test = test.replace(/¢/gm,"\n ¢")
+        test = test.replace(/µ/gm,"\n µ")
+        test = test.replace(/°/gm,"\n °")
+        test = test.split('\n')
+
+}
+
+        var correct=0;
+        for (var i = 0; i < test.length; i++) {
+          if (test[i].includes('¢')) {
+            correct=0
+          }else if (test[i].includes('°')) {
+            correct++
+          }
+          if (correct==2) {
+            for (var k = i; i-k < 15; k--) {
+              if (test[k].includes(':') && test[k].includes('µ') || test[k].includes('?') && test[k].includes('µ')) {
+              test[k] =  test[k].replace('µ','¢')
+
+              }
+            }
+          }
+        }
+        test = test.join('\n')
+        test = test.split('¢')
+        for (var i = 1; i < test.length; i++) {
+          test[i]=test[i].split('\n').filter(function(res){return /\S+/.test(res)==true})
+          if(test[i][0].match(/\ID=\d+/g)){
+          cachedid.push(test[i][0].match(/\ID=\d+/g)[0])
+          }
+        }
+        // idification system
+
+        function ID(count){
+          var temp = ''
+          length = String(count).length
+          for(var index = 0;index<5-length;index++){
+            temp +='0'
+          }
+          temp+=String(count)
+          return 'ID='+temp
+        }
+
+        for (var i = 1; i < test.length; i++) {
+
+          if(!test[i][0].match(/\ID=\d+/g)){
+            if(cachedid.indexOf(ID(i))!=-1){
+                var cnt = 0
+                while(ID(cnt).indexOf(cachedid)!=-1){
+                  cnt +=1
+                }
+            test[i][0]= '\n '+ID(cnt)+' '+test[i][0]
+                hasToDownload = true
+
+            }else{
+              test[i][0] = '\n '+ID(i)+' '+test[i][0]
+              hasToDownload = true
+            }
+          }else{
+            test[i][0] = '\n '+test[i][0]
+
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+        inputfile.remove()
+
+
+        sessionStorage.setItem('file', JSON.stringify(test))
+        sessionStorage.setItem('subject',file.name)
+        if(hasToDownload){
+          var temp=''
+          for(var i=1;i<test.length;i++){
+            test[i][0]='\n¢ '+test[i][0]
+            temp += test[i].join('\n')
+          }
+          temp = temp.replace(/¢\s+\n/g,' ¢')
+        alert('ტესტები არ იყო დანომრილი, გთხოვთ ჩაანაცვლოთ ძველი ახლით, ეს აუცილებელია რადგან ლოკალურად ტესტის ფაილის ცვლილება არ აისახება სისტემაში, რაც ხელს შეუშლის შეცდომების დამახსოვრებას')
+
+        var element = document.createElement('a');
+        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(temp));
+        element.setAttribute('download', file.name);
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
+
+
+      }
+       window.location.href ='custom'
+      }
+      reader.readAsText(file)
+
+
+  }
+}
+
+
+
+
+
+
+
+// ===============================================end custom test===========================================
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
